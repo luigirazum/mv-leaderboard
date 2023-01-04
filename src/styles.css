@@ -57,7 +57,7 @@ li:nth-child(even) {
   background-color: #d4d4d4;
 }
 
-li span:nth-child(1):after {
+li span:nth-child(1)::after {
   content: ':';
   margin-right: 0.2em;
 }
