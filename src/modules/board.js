@@ -5,16 +5,13 @@ import Addscore from './addscore.js';
 class Board {
   constructor() {
     this.div = document.getElementById('leaderboard');
-    this.title = 'Leaderboard';
     this.api = new Api();
     this.Scores = new Scores();
     this.AddScore = new Addscore();
   }
 
   renderBoard = () => {
-    this.div.innerHTML = '';
-    this.div.innerHTML = `<h1>${this.title}</h1>
-                          <div>
+    this.div.innerHTML = `<div>
                             <section id="scores"></section>
                             <section id="addscore"></section>
                           </div>`;
