@@ -16,7 +16,8 @@ class Scores {
   renderScores = (scores) => {
     this.div = document.getElementById('scores');
     this.div.innerHTML = '';
-    this.div.innerHTML = `<div><h2>${this.title}</h2><button type="button" id="refresh">Refresh</button></div><ul id="list"></ul>`;
+    this.div.innerHTML = `<div><h2>${this.title}</h2><button type="button" id="refresh">Refresh</button></div>
+                          <ul id="list"></ul>`;
     this.renderList(scores);
   }
 }
