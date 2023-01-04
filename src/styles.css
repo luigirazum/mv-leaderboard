@@ -1,1 +1,78 @@
 /* All the styles for the Leaderboard */
+
+/* General resets */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 2em 1em;
+}
+
+#leaderboard {
+  display: flex;
+  flex-flow: column;
+  row-gap: 1em;
+}
+
+#leaderboard > div,
+#scores > div,
+form {
+  display: flex;
+}
+
+#scores,
+#addscore {
+  margin: 1em;
+  padding-left: 1em;
+}
+
+#scores {
+  width: 50%;
+}
+
+#addscore {
+  width: 30%;
+}
+
+ul,
+form {
+  margin-top: 1em;
+}
+
+ul {
+  border: 1px solid #000;
+}
+
+li {
+  padding: 0.25em 0.5em;
+}
+
+li:nth-child(even) {
+  background-color: #d4d4d4;
+}
+
+li span:nth-child(1)::after {
+  content: ':';
+  margin-right: 0.2em;
+}
+
+span {
+  padding: 0.2em 0;
+}
+
+form {
+  flex-flow: column;
+  row-gap: 1em;
+}
+
+button {
+  width: 5rem;
+  padding: 0.25em 0.5em;
+  margin-left: auto;
+}
