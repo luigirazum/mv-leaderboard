@@ -28,6 +28,7 @@
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
+  - [© Acknowledge ](#-acknowledge-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
@@ -144,6 +145,15 @@ In order to improve this project, contributions, issues, and feature requests ar
 
 Feel free to check the [issues page](../../issues/).
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## © Acknowledge <a name="acknowledge"></a>
+
+Thanks to Muhamad Fandi, he is the one who create the amazing background image, you can [click here](https://www.vecteezy.com/members/fandi-creations) to discover more of his work.
+
+Also, you can find more background like this in [vecteezy](https://www.vecteezy.com/free-vector/pixel-game-background).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
