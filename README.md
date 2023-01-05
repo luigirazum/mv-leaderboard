@@ -28,6 +28,7 @@
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
+  - [© Acknowledge ](#-acknowledge-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
@@ -37,7 +38,7 @@
 **[Leaderboard]** website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 <div align="center">
 
-  <img src="./src/imgs/leaderboard_wireframe.png" alt="Screenshoot" width="360"  height="auto" />
+  <img src="./src/imgs/leaderboard_screenshoot.png" alt="Screenshoot" width="550"  height="auto" />
   <br/>
 
 </div>
@@ -148,6 +149,15 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## © Acknowledge <a name="acknowledge"></a>
+
+Thanks to Muhamad Fandi, he is the one who create the amazing background image, you can [click here](https://www.vecteezy.com/members/fandi-creations) to discover more of his work.
+
+Also, you can find more background like this in [vecteezy](https://www.vecteezy.com/free-vector/pixel-game-background).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## ⭐️ Show your support <a name="support"></a>
 
 I really enjoyed making this project, so, if you like it, I appreciate your support giving me a ⭐.
@@ -173,7 +183,5 @@ I really enjoyed making this project, so, if you like it, I appreciate your supp
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

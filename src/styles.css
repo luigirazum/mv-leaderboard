@@ -1,5 +1,14 @@
 /* All the styles for the Leaderboard */
 
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --font-type: vt323, system-ui, -apple-system, blinkmacsystemfont, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  font-size: 16px;
+}
+
 /* General resets */
 *,
 *::after,
@@ -10,14 +19,48 @@
   box-sizing: border-box;
 }
 
+* {
+  font-family: var(--font-type);
+}
+
 .container {
-  margin: 2em 1em;
+  margin: 0.5em 1em;
+}
+
+body {
+  font-size: 1.25em;
+  height: 100vh;
+  overflow: hidden;
+  background: url(./imgs/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body,
+h1,
+h2,
+button {
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0.1em;
+  color: #f85b30;
+  text-shadow: 1px 2px 3px #000;
+}
+
+h2 {
+  font-size: 1.8em;
+  word-spacing: -5px;
+  text-shadow: 1px 1px 5px #df5816;
 }
 
 #leaderboard {
   display: flex;
   flex-flow: column;
-  row-gap: 1em;
 }
 
 #leaderboard > div,
@@ -26,28 +69,43 @@ form {
   display: flex;
 }
 
+#scores > div {
+  align-items: center;
+}
+
+#leaderboard > div {
+  margin: 0 auto;
+}
+
 #scores,
 #addscore {
-  margin: 1em;
-  padding-left: 1em;
+  margin: 0.2em 1.5em;
+  padding: 0.5em;
 }
 
 #scores {
   width: 50%;
+  min-width: 18rem;
+  max-width: 22rem;
 }
 
 #addscore {
   width: 30%;
+  min-width: 12.5rem;
+  max-width: 14rem;
 }
 
 ul,
 form {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 ul {
-  border: 1px solid #000;
-  height: 26.1em;
+  border: 3px solid #c0233a;
+  height: 17.25rem;
+  overflow-y: auto;
+  box-shadow: 2px 2px 4px #000;
+  background-color: rgba(249, 193, 119, 0.8);
 }
 
 li {
@@ -55,7 +113,8 @@ li {
 }
 
 li:nth-child(even) {
-  background-color: #d4d4d4;
+  color: #fff;
+  background-color: rgba(192, 117, 79, 0.8);
 }
 
 li span:nth-child(1)::after {
@@ -69,11 +128,50 @@ span {
 
 form {
   flex-flow: column;
-  row-gap: 1em;
+  row-gap: 0.65em;
+}
+
+button,
+input {
+  border-radius: 15px;
+  outline: none;
 }
 
 button {
+  cursor: pointer;
+  font-size: 0.95em;
   width: 5rem;
-  padding: 0.25em 0.5em;
   margin-left: auto;
+  padding: 0.25em 0.5em;
+  border: 2px solid #df5816;
+  box-shadow: 2px 2px 3px #000;
+}
+
+button:hover {
+  background-color: #f9c177;
+  border-color: #c0233a;
+  color: #c0233a;
+}
+
+button:active {
+  border: 2px solid #fff;
+  background-color: #df5816;
+  color: #fff;
+  box-shadow: none;
+  margin-top: 2px;
+}
+
+input {
+  font-size: 0.85em;
+  padding: 0.25em 0.65em;
+  border: 2px solid #ce672d;
+  background-color: rgba(250, 250, 250, 0.8);
+}
+
+input:focus-visible {
+  border-color: #47df00;
+}
+
+input:invalid {
+  border-color: #c0233a;
 }
