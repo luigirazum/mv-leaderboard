@@ -1,16 +1,35 @@
 class Api {
-  constructor() {
-    this.scores = [
-      { name: 'Joseph', score: 300 },
-      { name: 'Jane', score: 100 },
-      { name: 'Christian', score: 30 },
-      { name: 'Ronaldo', score: 85 },
-      { name: 'Vincent', score: 210 },
-      { name: 'Patrick', score: 127 },
-    ];
+  constructor(gameName) {
+    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+    this.endPoint = 'games/';
+    this.game = `${gameName}/`;
+    this.scores = [];
   }
 
-  getScores = () => this.scores;
+  addNewScore = async (score) => {
+    const fetchUrl = `${this.url}${this.endPoint}:${this.game}scores/`;
+    const response = await fetch(fetchUrl, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(score),
+    });
+    const data = await response.json();
+    const { result } = data;
+    return result === 'Leaderboard score created correctly.';
+  };
+
+  retrieveScores = async () => {
+    const fetchUrl = `${this.url}${this.endPoint}:${this.game}scores/`;
+
+    const response = await fetch(fetchUrl);
+    const data = await response.json();
+    const { result } = data;
+    this.scores = result;
+    return this.scores;
+  };
 }
 
 export { Api as default };

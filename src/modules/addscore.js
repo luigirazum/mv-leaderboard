@@ -7,11 +7,16 @@ class Addscore {
     this.div = document.getElementById('addscore');
     this.div.innerHTML = '';
     this.div.innerHTML += `<h2>${this.title}</h2>`;
-    this.div.innerHTML += `<form>
-                            <input type="text" placeholder="Your name">
-                            <input type="text" placeholder="Your score">
+    this.div.innerHTML += `<form id="newscore">
+                            <input id="user" type="text" name="user" placeholder="Your name">
+                            <input id="score" type="text" name="score" placeholder="Your score">
                             <button type="submit">Submit</button>
                           </form>`;
+  }
+
+  getNewScore = (elements) => {
+    const [user, score] = elements;
+    return { user: user.value, score: score.value };
   }
 }
 
