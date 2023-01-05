@@ -38,7 +38,7 @@
 **[Leaderboard]** website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 <div align="center">
 
-  <img src="./src/imgs/leaderboard_wireframe.png" alt="Screenshoot" width="360"  height="auto" />
+  <img src="./src/imgs/leaderboard_screenshoot.png" alt="Screenshoot" width="550"  height="auto" />
   <br/>
 
 </div>
