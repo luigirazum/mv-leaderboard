@@ -14,7 +14,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Minimalist ToDo List\] ](#-minimalist-todo-list-)
+- [📖 \[Leaderboard\] ](#-leaderboard-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -34,7 +34,7 @@
   - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
-# 📖 [Minimalist ToDo List] <a name="about-project"></a>
+# 📖 [Leaderboard] <a name="about-project"></a>
 
 **[Leaderboard]** website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 <div align="center">
@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://luigirazum.github.io/mv-leaderboard/" target="_blank" rel="noopener noreferrer">Minimalist ToDo-List - Live Demo</a>
+- <a href="https://luigirazum.github.io/mv-leaderboard/" target="_blank" rel="noopener noreferrer">Leaderboard - Live Demo</a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
